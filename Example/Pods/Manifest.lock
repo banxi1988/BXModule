@@ -1,0 +1,16 @@
+PODS:
+  - BXModule (0.1.0)
+
+DEPENDENCIES:
+  - BXModule (from `../`)
+
+EXTERNAL SOURCES:
+  BXModule:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BXModule: 8b8d5ae301e3b42809f0931f136e2dcb175bcba6
+
+PODFILE CHECKSUM: 3732c2636828ef53d2e886fe85953e601795018f
+
+COCOAPODS: 1.1.0.rc.2
