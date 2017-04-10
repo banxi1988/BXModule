@@ -33,7 +33,7 @@ extension BXModuleManager: UIApplicationDelegate{
   // MARK: normal lifecycle
   
   public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-    NSLog("\(#function) \(application)  \(launchOptions)")
+    NSLog("\(#function) \(application)  \(String(describing: launchOptions))")
     for module in all(){
       let _ = module.application?(application, willFinishLaunchingWithOptions: launchOptions)
     }
@@ -41,7 +41,7 @@ extension BXModuleManager: UIApplicationDelegate{
   }
   
   public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-    NSLog("\(#function) \(application)  \(launchOptions)")
+    NSLog("\(#function) \(application)  \(String(describing: launchOptions))")
     for module in all(){
       let _ = module.application?(application, didFinishLaunchingWithOptions: launchOptions)
     }
